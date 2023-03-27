@@ -24,9 +24,9 @@
                     <a href="{{ route('blog.article.index') }}" class="nav-link"><strong>{{ __('Mostrar todos') }}</strong></a>
                 </li>
             </ul>
-            <form action="{{ route('blog.search') }}" class="form-inline ml-auto">
-                <div class="form-group no-border nav-category-search">
-                    <input type="text" class="form-control" name="searching" placeholder="Buscar">
+            <form action="{{ route('blog.search') }}" class="form-inline-form-nav ml-auto">
+                <div class="form-group no-border nav-category-search mb-0">
+                    <input type="text" class="form-control" name="searching" placeholder="Buscar" required>
                 </div>
                 <button type="submit" style="margin-right: 30px;" class="btn btn-white btn-just-icon btn-round">
                     <i class="material-icons">{{ ('search') }}</i>

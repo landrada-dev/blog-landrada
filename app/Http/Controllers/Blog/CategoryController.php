@@ -36,7 +36,7 @@ class CategoryController extends BlogController
             ->publishedUntilToday()
             ->category($category->id)
             ->orderBy('publish_date', 'desc')
-            ->paginate(10);
+            ->paginate(4);
 
         return view('blog.articles_category', compact(['articles', 'category']));
     }

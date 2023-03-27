@@ -21,7 +21,9 @@
                                     @include('blog._partials.featured_articles')
                                 @endforeach
                             </div>
-                        </h2>
+                            <div class="text-center mt-3">
+                                {{ $featured_articles->links('vendor.pagination.bootstrap-4') }}
+                            </div>
                     </div>
                 </div>
             </div>

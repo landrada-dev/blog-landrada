@@ -1,6 +1,6 @@
 <nav id="sectionsNav" class="navbar fixed-top  navbar-expand-lg " color-on-scrolli="100" >
     <div class="container">
-        <div class="navbar-translate">
+        <div class="navbar-translate" style="flex-grow: 2;">
             <a class="brand-min" href="https://www.landrada.mx/">
                 <img class="img" width="200px" src="{{ asset('landrada') }}/logo.png">
             </a>
@@ -13,6 +13,7 @@
             </button>
         </div>
         <div class="collapse navbar-collapse">
+            <div></div>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link mr-2" href="https://www.landrada.mx/">{{ __('Inicio')}} </a>

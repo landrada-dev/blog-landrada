@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\View;
 class BlogController extends Controller
 {
     function __construct() {
-        $navCategories = Category::has('articles', '>', '0')->take(8)->get();
+        $navCategories = Category::has('articles', '>', '0')->take(4)->get();
         $footerCategories = Category::has('articles', '>', '0')->take(8)->get();
         $footerAuthors = User::userIsAuthor()->take(8)->get();
         $footerTags = Tag::take(15)->get();

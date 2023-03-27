@@ -36,7 +36,7 @@ class HomeController extends BlogController
         OpenGraph::addImage('https://blog.landrada.mx/landrada/blog/blog-landrada-cover.jpg');
 
 
-        $featured_articles = $article->published()->showHomepage()->publishedUntilToday()->orderBy('publish_date', 'desc')->get();
+        $featured_articles = $article->published()->showHomepage()->publishedUntilToday()->orderBy('publish_date', 'desc')->paginate(15);
         $latest_articles = $article->published()->publishedUntilToday()->orderBy('publish_date', 'desc')->take(3)->get();
         $authors = $user->userIsAuthor()->take(4)->get();
 

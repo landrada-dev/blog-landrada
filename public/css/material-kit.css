@@ -2090,6 +2090,12 @@ select.form-control:focus::-ms-value {
     align-items: center
 }
 
+.form-inline-form-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center
+}
+
 .form-inline .form-check {
     width: 100%
 }
